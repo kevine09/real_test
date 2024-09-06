@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/navigation_home"
+        android:icon="@drawable/ic_home"
+        android:title="Accueil"
+        app:showAsAction="always" />
+    <item
+        android:id="@+id/don"
+        android:icon="@drawable/don1"
+        android:title="soutenir"
+        app:showAsAction="always" />
+    <item
+        android:id="@+id/don2"
+        android:icon="@drawable/don2"
+        android:title="recherche"
+        app:showAsAction="always" />
+    <item
+        android:id="@+id/navigation_settings"
+        android:icon="@drawable/parametre"
+        android:title="Paramètres"
+        app:showAsAction="always" />
+</menu>

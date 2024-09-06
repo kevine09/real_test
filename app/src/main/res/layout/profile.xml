@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/edit"
+    android:padding="16dp">
+
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottom_navigation"
+        android:layout_width="388dp"
+        android:layout_height="64dp"
+        android:layout_marginTop="648dp"
+        android:background="@color/black"
+        app:itemIconTint="@color/colorPrimaryDark"
+        app:itemTextColor="@color/white"
+        app:labelVisibilityMode="labeled"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.555"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:menu="@menu/bottom_nav_menu" />
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="0dp"
+        android:layout_height="?attr/actionBarSize"
+        android:layout_marginTop="8dp"
+        android:background="@android:color/transparent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+        app:theme="@style/ToolbarTheme"
+        app:titleTextColor="@color/black" />
+
+    <ImageView
+        android:id="@+id/profile_image"
+        android:layout_width="157dp"
+        android:layout_height="164dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="8dp"
+        android:contentDescription="profile_image_desc"
+        android:src="@drawable/photo_profile"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.054"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/text_name"
+        android:layout_width="285dp"
+        android:layout_height="28dp"
+        android:layout_below="@id/profile_image"
+        android:layout_centerHorizontal="true"
+        android:fontFamily="sans-serif-condensed-medium"
+        android:text="Nom"
+        android:textColor="#0B0B0B"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.457"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.406" />
+
+    <TextView
+        android:id="@+id/text_phone"
+        android:layout_width="285dp"
+        android:layout_height="28dp"
+        android:layout_below="@id/text_name"
+        android:layout_centerHorizontal="true"
+        android:text="Numéro de Téléphone"
+        android:fontFamily="sans-serif-condensed-medium"
+        android:textColor="#0B0B0B"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.457"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.511" />
+
+    <TextView
+        android:id="@+id/text_email"
+        android:layout_width="285dp"
+        android:layout_height="28dp"
+        android:layout_below="@id/text_phone"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="300dp"
+        android:textColor="#0B0B0B"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:fontFamily="sans-serif-condensed-medium"
+        android:text="Adresse Email"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.458"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/text_location"
+        android:layout_width="285dp"
+        android:layout_height="28dp"
+        android:layout_below="@id/text_email"
+        android:layout_centerHorizontal="true"
+        android:text="Localisation"
+        android:textColor="#0B0B0B"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:fontFamily="sans-serif-condensed-medium"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.457"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.459" />
+
+    <Button
+        android:id="@+id/buttonEdit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/black"
+        android:text="Modifier le Profil"
+        app:icon="@android:drawable/ic_menu_edit"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.294" />
+
+    <ImageButton
+        android:id="@+id/button_delete"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:contentDescription="supprimer le profil"
+        android:src="@android:drawable/ic_menu_delete"
+        android:text="Supprimer"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.201"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.703" />
+
+    <ImageButton
+        android:id="@+id/button_share"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toStartOf="@id/button_delete"
+        android:contentDescription="partager le profil"
+        android:src="@android:drawable/ic_menu_share"
+        android:text="Partager"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.696"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.703" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

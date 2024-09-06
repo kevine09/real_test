@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="filter_options">filter_options</string-array>
+
+    <string-array name="sync_frequency_entries">
+        <item>Jamais</item>
+        <item>Chaque jour</item>
+        <item>Chaque semaine</item>
+        <item>Chaque mois</item>
+    </string-array>
+    <string-array name="sync_frequency_values">
+        <item>0</item>
+        <item>1</item>
+        <item>7</item>
+        <item>30</item>
+    </string-array>
+</resources>
